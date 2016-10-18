@@ -1,0 +1,22 @@
+{
+  "name": "roman-numbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manelgavalda/RomanNumbers.git"
+  },
+  "author": "Manel <manelgavalda@iesebre.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manelgavalda/RomanNumbers/issues"
+  },
+  "homepage": "https://github.com/manelgavalda/RomanNumbers#readme",
+  "devDependencies": {
+    "laravel-elixir": "^6.0.0-11"
+  }
+}
