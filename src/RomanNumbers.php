@@ -2,26 +2,40 @@
 
 class RomanNumbers
 {
-    public function convert($number){
+    protected $code = [
+        1000 => 'M',
+        900 => 'CM',
+        500 => 'D',
+        400 => 'CD',
+        100 => 'C',
+        90 => 'XC',
+        50 => 'L',
+        40 => 'XL',
+        10 => 'X',
+        9 => 'IX',
+        5 => 'V',
+        4 => 'IV',
+        1 => 'I',
+        ];
 
-        $conver = array(
-            1 => "I",
-            5 => "V",
-            10 => "X",
-            50 =>
-        );
+    public function convert($number)
+    {
 
-        if ($number==10){
-            return "X";
+
+        $solution = "";
+
+        foreach ($this->code as $decimal => $roman){
+            if ($number >= $decimal) {
+                $solution .= $roman;
+                $number-=$decimal;
+            }
         }
-        if ($number==5){
-            return "V";
-        }
-        if ($number==4){
-
-        }
-        return str_repeat('I',$number);
-        }
 
 
-   }
+
+        $solution .= str_repeat('I', $number);
+        return $solution;
+
+
+    }
+}
